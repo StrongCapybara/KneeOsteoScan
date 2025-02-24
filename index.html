@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4">
+                <h2 class="card-title text-center mb-4 d-flex align-items-center justify-content-center">
+                    <i data-feather="activity" class="me-2"></i>
+                    Knee X-Ray Analysis
+                </h2>
+
+                <div class="alert alert-info border-0 rounded-3 shadow-sm" role="alert">
+                    <i data-feather="info" class="me-2"></i>
+                    Upload a knee X-ray image for automatic osteoporosis screening.
+                </div>
+
+                <form id="uploadForm" class="mb-3 text-center">
+                    <input type="file" id="fileInput" class="form-control" accept=".jpg,.jpeg,.png" hidden>
+                    <button type="button" id="uploadButton" class="btn btn-primary btn-lg rounded-3 shadow-sm hover-lift">
+                        <i data-feather="upload" class="me-2"></i>
+                        Choose X-Ray Image
+                    </button>
+                    <div id="fileInfo" class="mt-2 text-muted"></div>
+                </form>
+
+                <div id="loadingIndicator" class="text-center d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Analyzing...</span>
+                    </div>
+                    <p class="mt-2">Analyzing your X-ray...</p>
+                </div>
+
+                <div id="results" class="d-none">
+                    <h3 class="mb-3">Analysis Results</h3>
+                    <div class="result-card p-4 rounded-3 shadow-sm border">
+                        <div id="resultStatus" class="mb-3"></div>
+                        <div id="resultConfidence" class="mb-3"></div>
+                        <div id="resultRecommendation" class="mb-3"></div>
+                        <div id="uploadedImageContainer" class="mt-3">
+                            <h4 class="mb-2">Uploaded Image:</h4>
+                            <img id="uploadedImage" src="" alt="Uploaded X-Ray" class="img-fluid rounded-3" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="error" class="alert alert-danger rounded-3 shadow-sm d-none" role="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+<script>
+    // Assuming you have a function to handle file input and display the image
+    document.getElementById('uploadButton').addEventListener('click', function() {
+        document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('uploadedImage').src = e.target.result;
+                document.getElementById('uploadedImageContainer').style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+{% endblock %}
