@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "osteoscan"
+version = "0.1.0"
+description = "X-ray based osteoporosis detection app"
+authors = ["Pajas Raj <pajas.arj@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+opencv-python = "^4.5.5"
+numpy = "^1.24.0"
+werkzeug = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
