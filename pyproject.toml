@@ -1,5 +1,5 @@
 [project]
-name = "kneeosteoscan"
+name = "osteoscan"
 version = "0.1.5"
 description = "X-ray based osteoporosis detection app"
 authors = ["Pajas Raj <pajas.arj@gmail.com>"]
