@@ -54,11 +54,7 @@
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
 <script>
-    // Assuming you have a function to handle file input and display the image
-    document.getElementById('uploadButton').addEventListener('click', function() {
-        document.getElementById('fileInput').click();
-    });
-
+    // Remove the duplicate click event listener and keep only the file change handler
     document.getElementById('fileInput').addEventListener('change', function(event) {
         const file = event.target.files[0];
         if (file) {
