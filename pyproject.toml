@@ -1,6 +1,6 @@
 [project]
-name = "kneeosteoscan"
-version = "0.1.5"
+name = "osteoscan"
+version = "0.1.0"
 description = "X-ray based osteoporosis detection app"
 authors = ["Pajas Raj <pajas.arj@gmail.com>"]
 license = "MIT"
@@ -52,8 +52,8 @@ dependencies = [
 ]
 
 [tool.poetry]
-name = "kneeosteoscan"
-version = "0.1.5"
+name = "osteoscan"
+version = "0.1.0"
 description = "X-ray based osteoporosis detection app"
 authors = ["Pajas Raj <pajas.arj@gmail.com>"]
 license = "MIT"
