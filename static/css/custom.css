@@ -13,7 +13,7 @@
 }
 
 .result-card {
-    background-color: var(--bs-dark);
+    background-color: #1a2232;
     border: 1px solid var(--bs-border-color);
 }
 
@@ -21,12 +21,16 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--bs-dark);
+    background-color: #1a2232;
     border-top: 1px solid var(--bs-border-color);
 }
 
 main {
     margin-bottom: 100px;
+}
+
+.bg-gradient {
+    background-color: #1a2232;
 }
 
 .hover-lift {
@@ -37,11 +41,57 @@ main {
     transform: translateY(-2px);
 }
 
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
 .card {
     background: rgba(33, 37, 41, 0.8);
     backdrop-filter: blur(10px);
 }
 
+.alert {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.8);
+    border: 1px solid var(--bs-border-color);
+}
+
+.example-images {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.8);
+    border: 1px solid var(--bs-border-color);
+}
+
+.example-images .card {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.example-images .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.example-images img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.example-images img:hover {
+    transform: scale(1.05);
+}
+
 .btn-primary {
+    background-color: #2d2f5b;
+    border: 2px solid #3f3a7d;
     padding: 0.8rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #3a3d7a;
+    border-color: #3f3a7d;
 }
