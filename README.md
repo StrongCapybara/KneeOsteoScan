@@ -16,9 +16,9 @@ Knee osteoarthritis (OA) is a prevalent degenerative joint disease that can lead
 ## 📊 Model Training and Dataset
 The deep learning model was trained on a curated dataset of knee X-ray images, annotated for varying degrees of osteoarthritis severity. The training process involved:
 
-- **Data Preprocessing**: Normalization, resizing, and augmentation of images.
+- **Data Preprocessing**: Normalization, resizing and augmentation of images.
 - **Model Architecture**: Utilized a convolutional neural network (CNN) optimized for image classification tasks.
-- **Evaluation Metrics**: Accuracy, precision, recall, and F1-score were used to assess model performance.
+- **Evaluation Metrics**: Accuracy, precision, recall and F1-score were used to assess model performance.
 
 *Note*: Due to data privacy concerns, the dataset is not included in this repository.
 
