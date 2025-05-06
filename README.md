@@ -59,5 +59,7 @@ The deep learning model was trained on a curated dataset of knee X-ray images, a
 This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgements
-- [Dr. Mohiul Islam](https://www.linkedin.com/in/dr-mohiul-islam-81604070/): Project Guide at Vellore Institute of Technology (VIT), for his guidance and support.
+
+- [Dr. Mohiul Islam](https://www.linkedin.com/in/dr-mohiul-islam-81604070/), Project Guide at Vellore Institute of Technology (VIT), for his guidance and support.
+- My teammates [Sahil Gubgotra](https://www.linkedin.com/in/sahil-gubgotra-902555225/) and [Shivam Kumar](https://www.linkedin.com/in/shivam-kumar-a7349621a/) for their collaboration and contribution throughout the project.
 - Open-source contributors and the machine learning community for their resources and inspiration.
