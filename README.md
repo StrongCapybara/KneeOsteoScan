@@ -1,6 +1,6 @@
 # KneeOsteoScan
 
-**KneeOsteoScan** is a web-based application developed to assist in the early detection and classification of knee osteoarthritis using X-ray images. This project was undertaken as **Project 2** during my B.Tech at Vellore Institute of Technology (VIT).
+**KneeOsteoScan** is a web-based application developed to assist in the early detection and classification of knee osteoarthritis using X-ray images. This project was undertaken as **Project 2 (BECE498J)** during my B.Tech at Vellore Institute of Technology (VIT).
 
 ## 🩺 Project Overview
 
