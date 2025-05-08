@@ -1,6 +1,6 @@
 # KneeOsteoScan
 
-**KneeOsteoScan** is a web-based application developed to assist in the early detection and classification of knee osteoarthritis using X-ray images. This project was undertaken as **Project 2 (BECE498J)** during my B.Tech at Vellore Institute of Technology (VIT).
+**KneeOsteoScan** is a web-based application developed to assist in the early detection and classification of knee osteoarthritis using X-ray images. This project was undertaken as **Project-II (BECE498J)** during my B.Tech at Vellore Institute of Technology (VIT).
 
 ## 🩺 Project Overview
 
@@ -20,7 +20,7 @@ The deep learning model was trained on a curated dataset of knee X-ray images, a
 - **Model Architecture**: Utilized a convolutional neural network (CNN) optimized for image classification tasks.
 - **Evaluation Metrics**: Accuracy, precision, recall and F1-score were used to assess model performance.
 
-*Note*: Due to data privacy concerns, the dataset is not included in this repository.
+*Note*: The deep learning model was trained on the publicly available [Knee X-ray Osteoporosis Database](#-dataset-citation) from Mendeley Data.
 
 
 ## 🧠 Technology Stack
@@ -48,11 +48,18 @@ The deep learning model was trained on a curated dataset of knee X-ray images, a
 
 4. **Run the Application**:
    ```bash
-   python app.py
+   python main.py
 
 5. **Access the Web Interface**:
 
     Open your browser and navigate to http://127.0.0.1:5000/ to use the application.
+
+
+## 📚 Dataset Citation
+
+This project uses the **Knee X-ray Osteoporosis Database**:
+
+> [Wani, I.M., & Arora, S. (2021). Knee X-ray Osteoporosis Database. Mendeley Data, V2.](https://doi.org/10.17632/fxjm8fb6mw.2)
 
 
 ## 📄 License
