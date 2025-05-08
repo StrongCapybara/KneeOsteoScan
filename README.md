@@ -57,9 +57,9 @@ The deep learning model was trained on a curated dataset of knee X-ray images, a
 
 ## 📚 Dataset Citation
 
-This project uses the **Knee X-ray Osteoporosis Database**:
+We gratefully acknowledge the dataset authors:
 
-> [Wani, I.M., & Arora, S. (2021). Knee X-ray Osteoporosis Database. Mendeley Data, V2.](https://doi.org/10.17632/fxjm8fb6mw.2)
+> **Majeed Wani, Insha; Arora, Sakshi (2021)**, “Knee X-ray Osteoporosis Database”, *Mendeley Data*, V2, doi: [10.17632/fxjm8fb6mw.2](https://doi.org/10.17632/fxjm8fb6mw.2)
 
 
 ## 📄 License
